@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="scalermedium">#006ada</color>
+    <color name="scalerdark">#0041ca</color>
+    <color name="scalerlight">#0f8cff</color>
+    <color name="colorAccent">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+</resources>

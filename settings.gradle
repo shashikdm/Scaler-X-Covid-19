@@ -1,0 +1,2 @@
+rootProject.name='Scaler X Covid-19'
+include ':app'
