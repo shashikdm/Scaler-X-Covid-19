@@ -12,18 +12,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="16dp"
+        android:background="@color/white"
         tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:id="@+id/registerLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
+            <TextView
+                android:id="@+id/yourPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/your_phone_number" />
+
+            <TextView
+                android:id="@+id/phoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp" />
             <TextView
                 android:id="@+id/yourName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="3dp"
                 android:text="@string/your_name" />
 
             <EditText
@@ -36,24 +56,12 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/yourPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/your_phone_number" />
-
-            <EditText
-                android:id="@+id/phoneInput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/phone_number"
-                android:inputType="phone" />
-
-            <TextView
                 android:id="@+id/mapGuide"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="3dp"
                 android:text="@string/map_guide" />
 
             <fragment
@@ -61,6 +69,9 @@
                 android:name="com.google.android.gms.maps.MapFragment"
                 android:layout_width="match_parent"
                 android:layout_height="384dp"
+                android:paddingStart="3dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="3dp"
                 tools:ignore="FragmentTagUsage" />
 
 
@@ -74,7 +85,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:background="@color/scalerlight"
         android:onClick="save"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"

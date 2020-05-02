@@ -1,19 +1,18 @@
 <resources>
-    <string name="app_name">CoGiv</string>
+    <string name="app_name">GivLyf</string>
 
     <string name="radius">Radius</string>
     <string name="toggle_unit">Toggle unit</string>
     <string name="unit_metre">m</string>
-    <string name="unit_kilometre">km</string>
+    <string name="unit_kilometre">kms</string>
     <string name="autofill_radius">eg 300</string>
     <string name="title_activity_login">Sign in</string>
 
     <string name="scaler_logo">Scaler Logo</string>
     <string name="send_otp">Send OTP</string>
-    <string name="google_maps_key"></string>
     <string name="phone_number">Phone Number</string>
     <string name="name">Name</string>
-    <string name="map_guide">Your home location \n (place marker)</string>
+    <string name="map_guide">Location</string>
     <string name="otp">OTP</string>
 
     <string name="timeout_in_seconds">Timeout in seconds:</string>
@@ -22,27 +21,26 @@
     <!-- config  -->
     <string name="default_time">30</string>
     <string name="default_radius">10</string>
-    <string name="base_url">http://10.0.2.2:8085</string>
+    <!--    <string name="base_url">http://10.0.2.2:8085</string>-->
 <!--    <string name="base_url">http://192.168.43.40:8085</string>-->
-<!--    <string name="base_url">http://124c7063.ngrok.io</string>-->
     <string name="otp_length">6</string>
     <string name="page_size">10</string>
 
 
-    <string name="your_name">Your name</string>
-    <string name="your_phone_number">Your phone number</string>
-    <string name="update_details">Update details</string>
+    <string name="your_name">Name</string>
+    <string name="your_phone_number">Phone Number</string>
+    <string name="update_details">Update Details</string>
     <string name="logout">Logout</string>
     <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
     <string name="title">Title</string>
     <string name="description">Description</string>
     <string name="display_location">Display Location</string>
-    <string name="full_address">Full Address</string>
+    <string name="full_address">Address</string>
     <string name="willing_to_pay">Willing to Pay</string>
     <string name="post">Post</string>
     <string name="your_location_in_short">Your location in short</string>
     <string name="your_detail_address">Your detail address</string>
-    <string name="describe_your_need">Describe your need</string>
+    <string name="describe_your_need">Describe your need.</string>
     <string name="what_do_you_need">What do you need?</string>
     <string name="monetization">Monetization</string>
     <string name="post_title">Title</string>
@@ -50,10 +48,10 @@
     <string name="search">Search</string>
     <string name="my_posts">My Posts</string>
     <string name="message">Message</string>
-    <string name="poster_location">Poster Location</string>
-    <string name="helper_name">Helper Name</string>
-    <string name="helper_message">Helper Message</string>
-    <string name="helper_location">Helper Location</string>
+    <string name="poster_location">Location</string>
+    <string name="helper_name">Name</string>
+    <string name="helper_message">Message</string>
+    <string name="helper_location">Location</string>
     <string name="contact_image">Contact Image</string>
     <string name="built_by_scaler_community">Built by Scaler community</string>
     <string name="_91">+91</string>

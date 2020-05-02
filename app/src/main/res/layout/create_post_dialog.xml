@@ -24,6 +24,8 @@
 
         <TextView
             android:id="@+id/title"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title" />
@@ -39,6 +41,8 @@
 
         <TextView
             android:id="@+id/description"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/description" />
@@ -55,6 +59,8 @@
 
         <TextView
             android:id="@+id/address"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/map_guide" />
@@ -74,6 +80,8 @@
 
         <TextView
             android:id="@+id/displayLocation"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/display_location" />
@@ -88,6 +96,8 @@
             android:importantForAutofill="no" />
 
         <TextView
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
             android:id="@+id/fullAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,13 +114,19 @@
             android:importantForAutofill="no" />
 
         <Switch
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
             android:id="@+id/willingToPayInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/willing_to_pay" />
 
         <TextView
-            android:id="@+id/emptyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

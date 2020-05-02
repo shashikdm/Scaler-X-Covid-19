@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <TableRow tools:ignore="UselessParent">
+    <TableRow
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/radiusTextView"
@@ -32,7 +35,6 @@
             android:hint="@string/autofill_radius"
             android:inputType="numberDecimal"
             android:text="@string/default_radius"
-            android:textAlignment="textEnd"
             android:textCursorDrawable="@null" />
 
         <TextView

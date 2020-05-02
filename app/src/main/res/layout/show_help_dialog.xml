@@ -25,15 +25,14 @@
             android:id="@+id/helperName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="@string/helper_name" />
 
-        <EditText
+        <TextView
             android:id="@+id/helperNameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:focusable="false"
-            android:inputType="textPersonName"
             android:importantForAutofill="no"
             tools:ignore="LabelFor" />
 
@@ -41,9 +40,10 @@
             android:id="@+id/helperMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="@string/helper_message" />
 
-        <EditText
+        <TextView
             android:id="@+id/helperMessageInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,19 +51,20 @@
             android:ems="10"
             android:focusable="false"
             android:gravity="start|top"
-            android:inputType="textMultiLine"
             android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="@string/helper_location" />
 
         <FrameLayout
             android:id="@+id/addressInputFrame"
             android:layout_width="match_parent"
-            android:layout_height="256dp">
+            android:layout_height="256dp"
+            android:padding="8dp">
 
             <fragment
                 android:id="@+id/addressInput"

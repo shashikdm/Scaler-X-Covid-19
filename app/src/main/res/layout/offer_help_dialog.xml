@@ -18,121 +18,130 @@
         android:id="@+id/createPostLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/title"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title" />
+            android:layout_margin="16dp"
+            android:background="@drawable/custom_border"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/titleInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint=""
-            android:ems="10"
-            android:focusable="false"
-            android:inputType="textPersonName"
-            android:importantForAutofill="no" />
-
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/description" />
-
-        <EditText
-            android:id="@+id/descriptionInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint=""
-            android:ems="10"
-            android:focusable="false"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:importantForAutofill="no" />
-
-        <TextView
-            android:id="@+id/address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/poster_location" />
-
-        <FrameLayout
-            android:id="@+id/addressInputFrame"
-            android:layout_width="match_parent"
-            android:layout_height="256dp">
-
-            <fragment
-                android:id="@+id/addressInput"
-                android:name="com.google.android.gms.maps.MapFragment"
+            <TextView
+                android:id="@+id/title"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:ignore="FragmentTagUsage" />
-        </FrameLayout>
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/displayLocation"
+            <TextView
+                android:id="@+id/titleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint=""
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="start|top"
+                android:hint=""
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/poster_location"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/addressInputFrame"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:padding="8dp">
+
+                <fragment
+                    android:id="@+id/addressInput"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="FragmentTagUsage" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fullAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/full_address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullAddressInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="start|top"
+                android:hint=""
+                android:importantForAutofill="no" />
+
+            <Switch
+                android:id="@+id/willingToPayInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:foregroundTint="@android:color/darker_gray"
+                android:text="@string/willing_to_pay"
+                android:textStyle="bold"
+                android:visibility="gone">
+
+            </Switch>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/display_location" />
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_border"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/displayLocationInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:focusable="false"
-            android:hint=""
-            android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/message"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/fullAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/full_address" />
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                tools:ignore="LabelFor" />
 
-        <EditText
-            android:id="@+id/fullAddressInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="start|top"
-            android:focusable="false"
-            android:inputType="textMultiLine"
-            android:hint=""
-            android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/emptyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <Switch
-            android:id="@+id/willingToPayInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:text="@string/willing_to_pay" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="@string/message" />
-
-        <EditText
-            android:id="@+id/messageInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:importantForAutofill="no"
-            tools:ignore="LabelFor" />
-
-        <TextView
-            android:id="@+id/emptyText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
     </LinearLayout>
 </ScrollView>
