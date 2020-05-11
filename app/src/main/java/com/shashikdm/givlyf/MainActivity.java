@@ -116,4 +116,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-
+/*
+Todo:
+1) change login screen - done
+2) onboarding - will not do
+3) select language
+4) change edittext to textview - done
+5) auto otp
+*/

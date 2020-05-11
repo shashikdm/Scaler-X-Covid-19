@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -72,9 +71,9 @@ public class ListHelpActivity extends AppCompatActivity {
         adapter = new CustomAdapterHelp(helpList, myOnClickListener);
         recyclerView.setAdapter(adapter);
 
-        EditText title = findViewById(R.id.titleInput);
-        EditText description = findViewById(R.id.descriptionInput);
-        EditText fullAddress = findViewById(R.id.fullAddressInput);
+        TextView title = findViewById(R.id.titleInput);
+        TextView description = findViewById(R.id.descriptionInput);
+        TextView fullAddress = findViewById(R.id.fullAddressInput);
         Switch willingToPay = findViewById(R.id.willingToPayInput);
         title.setText(post.getTitle());
         description.setText(post.getDescription());

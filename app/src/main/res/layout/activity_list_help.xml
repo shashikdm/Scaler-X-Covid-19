@@ -19,66 +19,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+        <TableRow>
             <TextView android:text="@string/post_title"
-                android:layout_weight="1"
                 android:padding="8dp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/titleInput"
-                android:focusable="false"
-                android:inputType="textMultiLine"
-                android:importantForAutofill="no"
-                android:layout_weight="8"
-                tools:ignore="LabelFor" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <TextView android:text="@string/post_description"
                 android:layout_weight="1"
                 android:padding="8dp" />
-
-            <EditText
-                android:id="@+id/descriptionInput"
-                android:focusable="false"
-                android:inputType="textMultiLine"
-                android:importantForAutofill="no"
-                android:layout_weight="8"
-                tools:ignore="LabelFor" />
         </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+
+        <TableRow>
+            <TextView android:text="@string/post_description"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/descriptionInput"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
 
             <TextView
                 android:padding="8dp"
-                android:layout_weight="1"
                 android:text="@string/full_address" />
 
-            <EditText
+            <TextView
                 android:id="@+id/fullAddressInput"
-                android:focusable="false"
-                android:inputType="textMultiLine"
-                android:importantForAutofill="no"
-                android:layout_weight="8"
-                tools:ignore="LabelFor" />
+                android:layout_weight="1"
+                android:padding="8dp" />
         </TableRow>
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:visibility="gone">
             <Switch
                 android:id="@+id/willingToPayInput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:clickable="false"
                 android:text="@string/willing_to_pay"
-                android:padding="8dp"
-                android:layout_weight="1"/>
+                android:padding="8dp" />
         </TableRow>
     </TableLayout>
 

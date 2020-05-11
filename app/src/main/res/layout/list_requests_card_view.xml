@@ -14,8 +14,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
-        app:cardCornerRadius="1dp"
-        app:cardElevation="4dp">
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
 
         <TableLayout
 
